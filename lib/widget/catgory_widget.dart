@@ -9,11 +9,19 @@ class CatgoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return    Padding(
-      padding: EdgeInsets.only(left: 10,top: 10),
-      child: CircleAvatar(
-        backgroundImage: AssetImage(catgory.imageUrl),
-        radius: 50,
-        child: Text(catgory.title),
+      padding: const EdgeInsets.only(left: 10,top:10),
+      child: Stack(
+        children: [
+          CircleAvatar(
+      backgroundImage: AssetImage(catgory.imageUrl),
+      radius: 55,
+          ),
+          CircleAvatar(
+            radius: 55,
+            backgroundColor: Colors.black.withOpacity(0.3),
+            child: Center(child: Text(catgory.title,style: const TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 16 ),)),
+          ),
+        ],
       ),
     );
   }

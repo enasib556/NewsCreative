@@ -6,13 +6,13 @@ class Articlewidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
           Container(
             height: 180,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
@@ -21,7 +21,7 @@ class Articlewidget extends StatelessWidget {
                     image: AssetImage('assets/health.jpeg'),
                     fit: BoxFit.cover)),
           ),
-          Text(
+          const Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Health Health Health Health Health Health Health v Health Health Health Health Health Health v vHealth",
@@ -30,7 +30,7 @@ class Articlewidget extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
-          Text(
+          const Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             "Health Health Health Health Health Health Health v Health Health Health Health Health Health v vHealth",
