@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_creative/screens/home_page.dart';
 
 void main()
 {
@@ -11,9 +12,7 @@ class NewsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body:,
-      ),
+      home: HomePage()
     );
   }
 }
